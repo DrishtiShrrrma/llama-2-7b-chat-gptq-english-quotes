@@ -10,9 +10,12 @@
 ![image](https://github.com/DrishtiShrrrma/llama-2-7b-chat-gptq-english-quotes/assets/129742046/7d26c68a-e69d-44ff-970f-b676b47076f5)
 
 #### Note: 
-1. With GPTQ quantization, we can quantize language model to 8, 4, 3 or even 2 bits. This comes without a big drop of performance and with faster inference speed.
-2. Note that the AutoGPTQ library provides more advanced usage (triton backend, fused attention, fused MLP) that are not integrated with Optimum.
-3. Only 4-bit models are supported with exllama kernels for now. Furthermore, it is recommended to disable the exllama kernel when you are finetuning your model with peft.
+1. GPTQ quantization is primarily for text models as of now.
+2. With GPTQ quantization, we can quantize language model to 8, 4, 3 or even 2 bits. This comes without a big drop of performance and with faster inference speed.
+3. Note that the AutoGPTQ library provides more advanced usage (triton backend, fused attention, fused MLP) that are not integrated with Optimum.
+4. Only 4-bit models are supported with exllama kernels for now.
+5. It is recommended to disable the exllama kernel when you are finetuning your model with peft.
+
 
 ###### References: 
 
