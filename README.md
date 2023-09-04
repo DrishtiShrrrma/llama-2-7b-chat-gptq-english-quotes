@@ -1,3 +1,12 @@
+#### Things to Try:
+
+1. Experiment with different values of LoRA parameters (r, lora_alpha, lora_dropout, etc.) to understand their effect on the model's performance and efficiency.
+2. does quantization affect the model's stability during training?
+3. After training quantized model, fine-tune it on a variety of tasks (e.g., sentiment analysis, summarization, translation) to see how it performs in comparison to the non-quantized model or other baselines.
+4. Benchmark the inference speed of the quantized models
+5. Analyze the robustness of quantized models. Are they more susceptible to adversarial attacks or out-of-distribution data?
+6. Study the generalization capability of quantized models on unseen data or different domains.
+
 #### Tips:
 
 1. Monitor GPU Memory: Use torch.cuda.memory_allocated() and torch.cuda.memory_cached() to monitor GPU memory usage.
