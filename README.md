@@ -25,6 +25,7 @@
 4. Only 4-bit models are supported with exllama kernels for now.
 5. It is recommended to disable the exllama kernel when you are finetuning your model with peft.
 6. The model parameters themselves remain quantized to 4-bits for the forward pass, but the training process (calculating gradients, weight updates) utilizes the more numerical-friendly half-precision format to accelerate computations.
+7. Combining quantization and mixed-precision training tries to leverage the best of both techniques: reduced model size and faster training.
 
 
 ###### References: 
