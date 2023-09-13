@@ -31,7 +31,7 @@
 10. Reduction factor for projection: A common starting value for r is between 2 to 16. It's a factor that decides the dimensionality of the low-rank adapted matrix, with a smaller r meaning a higher rank. Begin with smaller values like 2 or 4 and see how the model performs. Gradually increase and monitor the trade-off between performance and computational/memory cost.
 11. block_name_to_quantize = ["model.layers.0"]
 12. block_name_to_quantize = ["model.layers.31"]
-13. block_name_to_quantize = [f"model.layers.{i}" for i in range(32) if i % 2 == 0]  # for even layers
+13. block_name_to_quantize = [f"model.layers.{i}" for i in range(32) if i % 2 == 0]  # for even layers 
 
 
 
