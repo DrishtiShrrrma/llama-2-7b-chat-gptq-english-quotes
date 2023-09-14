@@ -27,11 +27,7 @@
 6. The model parameters themselves remain quantized to 4-bits for the forward pass, but the training process (calculating gradients, weight updates) utilizes the more numerical-friendly half-precision format to accelerate computations.
 7. Combining quantization and mixed-precision training tries to leverage the best of both techniques: reduced model size and faster training.
 8. value of lora_aplha: The lora_alpha can be thought of as the intensity of the adaptation. Typically, you might start with powers of 2, such as 16, 32, or 64. Begin with smaller values and adjust based on results.
-9. loradroput: Dropout is a regularization technique. Common values lie between 0.0 (no dropout) and 0.5. Start with small values like 0.1, and you can then experiment by increasing or decreasing the value to see its effect on model performance.
-10. Reduction factor for projection: A common starting value for r is between 2 to 16. It's a factor that decides the dimensionality of the low-rank adapted matrix, with a smaller r meaning a higher rank. Begin with smaller values like 2 or 4 and see how the model performs. Gradually increase and monitor the trade-off between performance and computational/memory cost.
-11. block_name_to_quantize = ["model.layers.0"]
-12. block_name_to_quantize = ["model.layers.31"]
-13. block_name_to_quantize = [f"model.layers.{i}" for i in range(32) if i % 2 == 0]  # for even layers 
+
 
 
 
