@@ -1,3 +1,7 @@
+####  Results 
+![image](https://github.com/DrishtiShrrrma/llama-2-7b-chat-gptq-english-quotes-lora-alpha-analysis/assets/129742046/7634cf06-d5b7-43ec-87f6-b5d450a885ae)
+
+
 #### Things to Try:
 
 1. Experiment with different values of LoRA parameters (r, lora_alpha, lora_dropout, etc.) to understand their effect on the model's performance and efficiency.
